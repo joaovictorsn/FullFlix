@@ -23,14 +23,18 @@ color: #fff;
 
 export const DivContainer = styled.div`
 display: flex;
+flex-wrap: wrap;
 margin: auto;
 margin-top: 2vh;
-font-size: 1vh;
+font-size: 2vh;
 color: #fff;
-height: 80vh;
+height: 100%;
 `
 
 export const ContainerGrid = styled.div`
 display: grid;
-
+grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-content: center;
+align-items: center;
+gap: 3vh 2vw;
 `

@@ -1,5 +1,5 @@
 // import style from "../../Layouts/HomePage/Home.module.scss"
-import { Header, TextFilmes, Div, DivContainer } from "./HomeStyle"; 
+import { Header, TextFilmes, Div, DivContainer, ContainerGrid } from "./HomeStyle"; 
 import { useEffect, useState } from "react";
 import { getList, getDetails } from "../../API/api";
 import { Card } from "../../components/Card/Card";
@@ -21,9 +21,11 @@ export function Home() {
             <p>Filmes Populares</p>
         </TextFilmes>
         <DivContainer>
+            <ContainerGrid>
                 {movies.map((movie)=>{      
                     return <Card movie={movie}/>;
                 })}
+            </ContainerGrid>
         </DivContainer>
 
         <footer>

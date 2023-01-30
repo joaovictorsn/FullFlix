@@ -1,10 +1,13 @@
+import {DivCard, TextContent} from "./CardStyle"
+
 export const Card = ({movie}) =>{
     return(
-        <div>
+        <DivCard>
             <div>
-                <img src='https://api.themoviedb.org/3/movie/550/images?api_key={api_key}&language=en-US&include_image_language=en,null$' alt="img" />
+                <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt="img" />
             </div>
-            <h1>{movie.title}</h1>
-        </div>
+            <TextContent>Titulo: {movie.title}</TextContent>
+            <TextContent>Nota: {movie.vote_average}</TextContent>
+        </DivCard>
     );
 };
