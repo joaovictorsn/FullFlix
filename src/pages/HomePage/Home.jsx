@@ -1,9 +1,10 @@
 // import style from "../../Layouts/HomePage/Home.module.scss"
-import { Header, TextFilmes, Div, DivContainer, ContainerGrid } from "./HomeStyle"; 
 import { useEffect, useState } from "react";
-import { getList, getDetails } from "../../API/api";
-import { Card } from "../../components/Card/Card";
 
+import { getList} from "../../API/api";
+
+import { Header, TextFilmes, Div, DivContainer, ContainerGrid } from "./HomeStyle"; 
+import { Card } from "../../components/Card/Card";
 
 export function Home() {
 
@@ -16,23 +17,17 @@ export function Home() {
         return(
     <Div>
         <Header/>
-
         <TextFilmes>
             <p>Filmes Populares</p>
         </TextFilmes>
         <DivContainer>
             <ContainerGrid>
                 {movies.map((movie)=>{      
-                    return <Card movie={movie}/>;
-                })}
+                    return <Card key={movie.id} movie={movie}/>;
+                })}        
             </ContainerGrid>
         </DivContainer>
 
-        <footer>
-            <div>
-                <h1>BORA LÁ CARAI</h1> 
-            </div>
-        </footer>
     </Div>
 )
 }

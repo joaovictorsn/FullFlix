@@ -12,6 +12,7 @@ export const Header = styled.header`
     display: block;
     background-image: url(${fullflix});
     background-position: center;
+    background-size: cover;
     height: 100vh;
 `
 
@@ -33,7 +34,9 @@ height: 100%;
 
 export const ContainerGrid = styled.div`
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+height: min-content;
+grid-template-columns: repeat(4,1fr);
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 gap: 3vh 2vw;
