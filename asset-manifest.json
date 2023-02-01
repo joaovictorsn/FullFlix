@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/FullFlix/static/css/main.a85bb21f.css",
+    "main.js": "/FullFlix/static/js/main.9e70cb25.js",
+    "static/media/background.png": "/FullFlix/static/media/background.60a6d4a9126182f0f885.png",
+    "index.html": "/FullFlix/index.html",
+    "main.a85bb21f.css.map": "/FullFlix/static/css/main.a85bb21f.css.map",
+    "main.9e70cb25.js.map": "/FullFlix/static/js/main.9e70cb25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a85bb21f.css",
+    "static/js/main.9e70cb25.js"
+  ]
+}
