@@ -31,10 +31,6 @@ align-items: center;
 transition: 0.4s;
 text-align: center;
 text-decoration: none;
-:link{
-    text-decoration: none;
-  color: inherit;
-}
 :hover{
     background-color: transparent;
     color: #f7d354;

@@ -9,11 +9,8 @@ import { DivContainer,
          Header, 
          Main, 
          Div, 
-         ButtomHome } from "./DetailStyle"
-
-
-
-
+         ButtomHome,
+         ButtomTrailer } from "./DetailStyle" 
 
 export function Detail(){
     // todos os atributos que estão na url, vão ser mapeados para o useParams e o id recebe eles
@@ -41,7 +38,7 @@ useEffect(()=>{
                     <strong>Título:</strong> <span>{movie.title}</span>
                     <strong>Sinopse:</strong> <span>{movie.overview}</span>
                     <strong>Data de Lançamento:</strong> <span>{movie.release_date}</span>
-                    
+                    <ButtomTrailer>Trailer</ButtomTrailer>
                     </DivContent>
             </DivContainer>
         </Main>
