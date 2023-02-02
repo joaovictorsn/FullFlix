@@ -27,7 +27,7 @@ useEffect(()=>{
             <DivContainer>
                 <Header>
                     <h1>{movie.title}</h1>
-                    <Link to={`/`}><ButtomHome>Home</ButtomHome></Link>
+                    <Link to={`/FullFlix`}><ButtomHome>Home</ButtomHome></Link>
                 </Header>
                 
                     <DivImg>
