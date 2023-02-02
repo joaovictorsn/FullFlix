@@ -6,7 +6,7 @@ export default function Router(){
     return(
     <BrowserRouter>
         <Routes>
-            <Route index element={<Home/>}/>
+            <Route path="/FullFlix" element={<Home/>}/>
             <Route path="/detail/:id" element={<Detail/>}/>
             <Route path="*" element={<div>Page not found - ERROR NUMBER 404</div>}/>
         </Routes>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-import {DivCard, TextContent, ButtonDetails, LinkButton} from "./CardStyle"
+import {DivCard, TextContent, ButtonDetails} from "./CardStyle"
 
 export const Card = ({movie, showLink = true}) =>{
     return(

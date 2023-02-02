@@ -1,5 +1,4 @@
-import Detail from "./pages/MovieDetails/Detail";
-import { Home } from "./pages/HomePage/Home";
+
 import Router from "./router/Router";
 
 
